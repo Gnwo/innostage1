@@ -33,7 +33,6 @@ a { color: var(--primary-text-color); }
     line-height: 1;
     color: var(--text-color-type3);
     padding: 24px 66px 24px 25px;
-    border: 1px solid var(--border-color-type3);
     box-sizing: border-box;
     background-color: var(--common-btn-bg);
     background-image: url(../img/btn_arrow.png);
@@ -136,6 +135,38 @@ a { color: var(--primary-text-color); }
 /* #header .inner ul#login-menu li:nth-last-child(2) {
     margin-right: 50px;
 } */
+input[type=checkbox]#gnbcheck {display:none;}
+#gnbbtn{
+    /* display: none; */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+    margin-right: 290px;
+    margin-top: 17px;
+}
+#gnbbtn span {
+    position: absolute;
+    top: 50%;/*50%*/
+    width: 32px;/*100%*/
+    height: 1.6px;
+    background-color: black;
+    transform: translateY(-50%);
+    transition: .3s;
+}
+#gnbbtn span:nth-child(1){
+    top: 8px;
+}
+#gnbbtn span:nth-child(3){
+    top: 24px;
+}
+
+#header .inner ul#login-menu li a {
+    position: absolute;
+    margin-top: -8px;
+    margin-left: -50px;
+}
 
 /* 메인배너 */
 #main-banner {
@@ -210,9 +241,27 @@ a { color: var(--primary-text-color); }
     font-size: 30px;
     margin: 0 auto;
 }
+#container section:nth-child(1) .inner .box-wrap .items{
+    height: 300px;
+    margin: 0 20px;
+    margin-bottom: 150px;
+    padding: 0 30px 70px;
+    border: 1px solid var(--border-color-type2);
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #f9f9f9;
 
+}
+#container section:nth-child(1) .items .box{
+    background-image: url(../img/ico_arrow_platform_black.svg);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+}
 #container section:nth-child(2){
-    background-color: green;
+    background-color: #01B18B;
 }
 
 
@@ -227,43 +276,58 @@ a { color: var(--primary-text-color); }
     font-size: 15px;
     margin-top: 0;
 }
+#container section:nth-child(2) .inner .items h3{
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    margin-top: 12px;
+}
+#container section:nth-child(2) .inner .items p{
+    color: white;
+    position: relative;
+    float: top;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-left: -30px;
+}
+
 #container section:nth-child(2) .inner .items{
     height: 250px;
     margin-left: 500px;
     width: 250px;
-    border: 1px solid var(--border-color-type2);
+    border-top: 1px solid var(--border-color-type2);
     box-sizing: border-box;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: #01B18B;
 }
 #container section:nth-child(2) .inner .items:nth-child(3){
     height: 250px;
     margin-left: 900px;
     margin-top: -250px;
     width: 250px;
-    border: 1px solid var(--border-color-type2);
+    border-top: 1px solid var(--border-color-type2);
     box-sizing: border-box;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: #01B18B;
 }
 #container section:nth-child(2) .inner .items:nth-child(5){
     height: 250px;
     margin-left: 900px;
     margin-top: -250px;
     width: 250px;
-    border: 1px solid var(--border-color-type2);
+    border-top: 1px solid var(--border-color-type2);
     box-sizing: border-box;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: #01B18B;
 }
 #container section:nth-child(2) .inner .items:nth-child(4){
     height: 250px;
     margin-left: 500px;
     width: 250px;
-    border: 1px solid var(--border-color-type2);
+    border-top: 1px solid var(--border-color-type2);
     box-sizing: border-box;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: #01B18B;
 }
 
 
@@ -286,7 +350,16 @@ a { color: var(--primary-text-color); }
     border: 1px solid var(--border-color-type2);
     box-sizing: border-box;
     border-radius: 15px;
-    background-color: yellowgreen;
+    background-color: rgb(182,227,212);
+}
+#container section:nth-child(3) .inner .items .box{
+    background-image: url(../img/img_view01.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    margin-top: -350px;
+    margin-left: 10px;
+
 }
 #container section:nth-child(3) .inner .items:nth-child(3){
     height: 200px;
@@ -297,7 +370,7 @@ a { color: var(--primary-text-color); }
     border: 1px solid var(--border-color-type2);
     box-sizing: border-box;
     border-radius: 15px;
-    background-color: yellowgreen;
+    background-color: #5dc591;
 }
 #container section:nth-child(3) .inner .items:nth-child(4){
     height: 200px;
@@ -307,7 +380,7 @@ a { color: var(--primary-text-color); }
     border: 1px solid var(--border-color-type2);
     box-sizing: border-box;
     border-radius: 15px;
-    background-color: yellowgreen;
+    background-color: #5dc591;
 }
 #container section:nth-child(3) .inner .items:nth-child(5){
     height: 200px;
@@ -317,7 +390,7 @@ a { color: var(--primary-text-color); }
     border: 1px solid var(--border-color-type2);
     box-sizing: border-box;
     border-radius: 15px;
-    background-color: yellowgreen;
+    background-color: #5dc591;
 }
 #container section:nth-child(3) .inner .items:nth-child(6){
     height: 200px;
@@ -327,9 +400,22 @@ a { color: var(--primary-text-color); }
     border: 1px solid var(--border-color-type2);
     box-sizing: border-box;
     border-radius: 15px;
-    background-color: yellowgreen;
+    background-color: #5dc591;
 }
-
+#container section:nth-child(3) .inner .items h3{
+    color: white;
+    font-size: 15px;
+    font-style: bold;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+#container section:nth-child(3) .inner .items p{
+    color: white;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
 
 
 #container section:nth-child(4) {
@@ -352,63 +438,61 @@ a { color: var(--primary-text-color); }
     color: var(--text-color-type2);
     color: green;
 }
+#container section:nth-child(4) .inner .box-wrap li .items .box1{
+    height: 150px;
+    width: 300px;
+    background-image: url(../img/tessa.jpg);
+    background-repeat: no-repeat;
+    background-size: 250px 100px;
+    margin-top: 50px;
+    margin-left: -15px;
+}
+#container section:nth-child(4) .inner .box-wrap li .items .box2{
+    height: 150px;
+    width: 300px;
+    background-image: url(../img/babybilly.jpg);
+    background-repeat: no-repeat;
+    background-size: 250px 100px;
+    margin-top: 50px;
+    margin-left: -15px;
+}
+#container section:nth-child(4) .inner .box-wrap li .items .box3{
+    height: 150px;
+    width: 300px;
+    background-image: url(../img/lucentblock.jpg);
+    background-repeat: no-repeat;
+    background-size: 250px 100px;
+    margin-top: 50px;
+    margin-left: -15px;
+}
 #container section:nth-child(4) .inner .box-wrap li .items h3{
-    margin-top: 150px;
+    margin-top: 30px;
 }
 #container section:nth-child(4) .inner .box-wrap li .items p{
     font-size: 13px;
     font-weight: var(--font-weight-regular);
     line-height: 24px;
     color: var(--text-color-type2);
-    margin-top: 0px;
+    margin-top: 15px;
     float: left;
 }
 
 #container section:nth-child(5) {
     background-image: url(../img/7.png);
     background-repeat: no-repeat;
-    background-position: 200%;
     background-size: 100%;
-}
-
-#container section:nth-child(5) .inner .box.img:before {
     height: 100%;
-
-    background-position: 70px bottom;
-}
-
-
-#container section:nth-child(6) .inner {
-    overflow: visible;
-    padding-top: 113px;
-}
-
-#container section:nth-child(6) .inner .box {
     width: 100%;
-    text-align: center;
-
+    
 }
-
-#container section:nth-child(6) .inner .box h3 {
-    color: var(--text-color-type1);
-}
-
-#container section:nth-child(6) .inner .box p {
-    margin-top: 25px;
-    color: var(--text-color-type2);
-}
-
-#container section:nth-child(6) .inner .box p + .slider-wrap {
-    margin-top: 55px;
-}
-
-#container section:nth-child(6) .inner .box .slider-wrap + .common-btn {
-    margin-top: 38px;
+#container section:nth-child(5) h3{
+    font-size: 40px;
+    width: 600px;
 }
 
 /* 상품설명 box 공통스타일 영역 */
 #container section .inner .box {
-    width: 50%;
+    width: 500px;
     min-height: 520px;
     padding: 0 20px;
     float: left;
@@ -465,8 +549,9 @@ a { color: var(--primary-text-color); }
 
 #container section .inner .box-wrap li .items{
     /* min-height: 240px; */
-    min-height: 310px;
+    height: 510px;
     margin: 0 20px;
+    margin-bottom: 150px;
     padding: 0 30px 70px;
     border: 1px solid var(--border-color-type2);
     box-sizing: border-box;
@@ -504,7 +589,7 @@ a { color: var(--primary-text-color); }
 
 /*footer*/
 #container section .footer{
-    height: 500px;
+    height: 400px;
     background-color: black;
 }
 #container section .footer .menu-list li{
